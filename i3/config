@@ -5,7 +5,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 
-gaps inner 10
+#gaps inner 10
 #gaps outer 5
 # i3 config file (v4)
 #
@@ -101,6 +101,8 @@ set $workspace2 "2: Firefox "
 set $workspace3 "3: Editor "
 set $workspace10 "10: Spotify "
 
+#Workspace specific gaps
+#workspace $workspace2 gaps inner 0
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
