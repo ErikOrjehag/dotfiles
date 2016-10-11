@@ -17,10 +17,10 @@ search_wrap = true
 cursor_blink = system
 
 # "block", "underline" or "ibeam"
-cursor_shape = underline
+cursor_shape = block
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
-#browser = xdg-open
+browser = firefox
 
 # set size hints for the window
 #size_hints = false
@@ -31,12 +31,6 @@ filter_unmatched_urls = true
 # emit escape sequences for extra modified keys
 #modify_other_keys = false
 
-#[colors]
-# If both of these are unset, cursor falls back to the foreground color,
-# and cursor_foreground falls back to the background color.
-#cursor = #dcdccc
-#cursor_foreground = #dcdccc
-
 #foreground = #dcdccc
 #foreground_bold = #ffffff
 #background = #3f3f3f
@@ -45,33 +39,14 @@ filter_unmatched_urls = true
 ##background = rgba(63, 63, 63, 0.8)
 #
 ## if unset, will reverse foreground and background
-#highlight = #2f2f2f
-#
-## colors from color0 to color254 can be set
-#color0 = #3f3f3f
-#color1 = #705050
-#color2 = #60b48a
-#color3 = #dfaf8f
-#color4 = #506070
-#color5 = #dc8cc3
-#color6 = #8cd0d3
-#color7 = #dcdccc
-#color8 = #709080
-#color9 = #dca3a3
-#color10 = #c3bf9f
-#color11 = #f0dfaf
-#color12 = #94bff3
-#color13 = #ec93d3
-#color14 = #93e0e3
-#color15 = #ffffff
-
+highlight = #2f2f2f
 
 [colors]
 
 # special
-foreground      = #9ea7a6
-foreground_bold = #9ea7a6
-cursor          = #9ea7a6
+foreground      = #629690
+foreground_bold = #629690
+cursor          = #629690
 background      = #232c31
 
 # black
@@ -104,6 +79,8 @@ color14 = #b02f30
 
 # white
 color7  = #9ea7a6
+color15 = #b5d8f6
+
 color15 = #b5d8f6
 
 
