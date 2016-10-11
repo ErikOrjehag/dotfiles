@@ -18,6 +18,7 @@ alias minecraft='java -jar Downloads/Minecraft.jar'
 
 alias flux='redshift-gtk &'
 
+alias ls='ls --color=auto'
 
 ###### Functions ######
 
@@ -28,3 +29,6 @@ volfunc(){
 server_function(){
 	python3 manage.py runserver $1
 }
+
+
+LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
