@@ -30,5 +30,9 @@ server_function(){
 	python3 manage.py runserver $1
 }
 
+parse_git_branch() {
+ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
 
 LS_COLORS=$LS_COLORS:'di=35:' ; export LS_COLORS
