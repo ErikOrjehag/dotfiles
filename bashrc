@@ -18,7 +18,7 @@ alias minecraft='java -jar Downloads/Minecraft.jar'
 
 alias flux='redshift-gtk &'
 
-alias ls='ls --color=auto'
+alias ls='ls --color=auto --group-directories-first'
 
 ###### Functions ######
 
