@@ -205,7 +205,7 @@ bindsym $mod+shift+o exec xbacklight -dec 15
 
 #exec redshift
 exec fluxgui
-exec_always feh --bg-scale /home/alexander/.i3/wallpaper.jpeg
+exec_always feh --bg-scale /home/alexander/.i3/wallpaper2.jpg
 exec_always xrandr --output HDMI1 --off --output VIRTUAL1 --off --output eDP1 --mode 1920x1080 --pos 0x0 --rotate normal
 exec compton -f
 
