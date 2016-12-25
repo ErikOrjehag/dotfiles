@@ -14,16 +14,24 @@ alias djangoserver=server_function
 
 alias volume=volfunc
 
+alias mic=micfunc
+
 alias minecraft='java -jar Downloads/Minecraft.jar'
 
 alias flux='redshift-gtk &'
 
 alias ls='ls --color=auto --group-directories-first'
 
+alias nv='nvim'
+
 ###### Functions ######
 
 volfunc(){
     amixer -D pulse sset Master $1%
+}
+
+micfunc(){
+    amixer -D pulse sset Capture $1%
 }
 
 server_function(){

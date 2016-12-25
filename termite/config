@@ -7,7 +7,8 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Ubuntu Mono 15
+#font = Ubuntu Mono 15
+font = Source Code Pro Semibold 15
 scrollback_lines = 10000
 search_wrap = true
 #icon_name = terminal
@@ -17,7 +18,7 @@ search_wrap = true
 cursor_blink = system
 
 # "block", "underline" or "ibeam"
-cursor_shape = blocke
+cursor_shape = block
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
 browser = firefox
@@ -36,52 +37,54 @@ filter_unmatched_urls = true
 #background = #3f3f3f
 #
 ## 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
+#background = rgba(63, 63, 63, 1)
 #
 ## if unset, will reverse foreground and background
-highlight = #2f2f2f
+#highlight = #2f2f2f
 
 [colors]
 
+
+
 # special
-foreground      = #629690
-foreground_bold = #629690
-cursor          = #629690
-background      = #232c31
-#transparency = 0.35
+foreground      = #ebece6
+foreground_bold = #ebece6
+cursor          = #ebece6
+#background      = #1e1f29
+#Same color as the above hex but with the option of transparency
+background	= rgba(30,31,41,1)
+
 # black
-color0  = #232c31
-color8  = #3f4944
+color0  = #000000
+color8  = #555555
 
 # red
-color1  = #2a5491
-color9  = #2a5491
+color1  = #fc4346
+color9  = #fc4346
 
 # green
-color2  = #237986
-color10 = #237986
+color2  = #50fb7c
+color10 = #50fb7c
 
 # yellow
-color3  = #a03b1e
-color11 = #a03b1e
+color3  = #f0fb8c
+color11 = #f0fb8c
 
 # blue
-color4  = #484d79
-color12 = #484d79
+color4  = #49baff
+color12 = #49baff
 
 # magenta
-color5  = #c59820
-color13 = #c59820
+color5  = #fc4cb4
+color13 = #fc4cb4
 
 # cyan
-color6  = #b02f30
-color14 = #b02f30
+color6  = #8be9fe
+color14 = #8be9fe
 
 # white
-color7  = #9ea7a6
-color15 = #b5d8f6
-
-color15 = #b5d8f6
+color7  = #ededec
+color15 = #ededec
 
 
 [hints]

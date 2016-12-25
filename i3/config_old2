@@ -100,8 +100,7 @@ bindsym $mod+a focus parent
 # variables for workspaces
 set $workspace1 "1: Terminals "
 set $workspace2 "2: Firefox "
-set $workspace3 "3: Editor "
-set $workspace9 "9: TeamSpeak "
+set $workspace3 "3: Editor "
 set $workspace10 "10: Spotify "
 
 #Workspace specific gaps
@@ -116,7 +115,7 @@ bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace $workspace9
+bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace $workspace10
 
 # move focused container to workspace
@@ -172,8 +171,8 @@ assign [class="Firefox"] $workspace2
 
 # colors
 
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
+set $bg-color 	         #BDC0AB
+set $inactive-bg-color   #BDC0AB
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
