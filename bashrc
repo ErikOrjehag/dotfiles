@@ -24,6 +24,7 @@ alias ls='ls --color=auto --group-directories-first'
 
 alias nv='nvim'
 
+
 ###### Functions ######
 
 volfunc(){
@@ -38,9 +39,16 @@ server_function(){
 	python3 manage.py runserver $1
 }
 
+pepper_connect(){
+    roslaunch pepper_bringup pepper_full.launch nao_ip:=192.168.1.$1 roscore_ip:=192.168.1.$2 network_interface:=wlp2s0
+}
+
 parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
 
 LS_COLORS=$LS_COLORS:'di=35:' ; export LS_COLORS
+source /opt/ros/kinetic/setup.bash
+source /home/alexander/catkin_ws/devel/setup.bash
+alias fix_src='source /opt/ros/kinetic/setup.bash'

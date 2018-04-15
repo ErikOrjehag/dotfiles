@@ -5,11 +5,10 @@
 # this file and re-run i3-config-wizard(1).
 #
 
-#gaps inner 10
+#gaps inner 5
 #gaps outer 5
 # i3 config file (v4)
 #
-# Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
 
@@ -41,7 +40,10 @@ new_float pixel 0
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 #bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 450 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
-bindsym $mod+d exec rofi -show run -width 2560 -fg "#B0E670" -bg "#14161F" -hlfg "#14161F" -hlbg "#B0E670" -bc "#14161F" -location 0 -lines 19 -bw 0 -font "MonacoB 16" -padding 450 -separator-style none -opacity 80
+#bindsym $mod+d exec rofi -show run -width 2560 -fg "#B0E670" -bg "#14161F" -hlfg "#14161F" -hlbg "#B0E670" -bc "#14161F" -location 0 -lines 19 -bw 0 -font "MonacoB 16" -padding 450 -separator-style none -opacity 80
+bindsym $mod+d exec rofi -show run -width 1920 -fg "#5EA7BE" -bg "#14161F" -hlfg "#14161F" -hlbg "#5EA7BE" -bc "#14161F" -location 0 -lines 19 -bw 0 -font "MonacoB 16" -padding 450 -separator-style none -opacity 80
+
+# 023D4F
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -101,6 +103,11 @@ bindsym $mod+a focus parent
 set $workspace1 "1: Terminals "
 set $workspace2 "2: Firefox "
 set $workspace3 "3: Editor "
+set $workspace4 "4: Thunar "
+set $workspace5 "5: Other"
+set $workspace6 "6: Other"
+set $workspace7 "7: Other"
+set $workspace8 "8: Other"
 set $workspace9 "9: TeamSpeak "
 set $workspace10 "10: Spotify "
 
@@ -111,11 +118,11 @@ set $workspace10 "10: Spotify "
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace $workspace3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
+bindsym $mod+4 workspace $workspace4
+bindsym $mod+5 workspace $workspace5
+bindsym $mod+6 workspace $workspace6
+bindsym $mod+7 workspace $workspace7
+bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
@@ -123,12 +130,12 @@ bindsym $mod+0 workspace $workspace10
 bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace $workspace3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+4 move container to workspace $workspace4
+bindsym $mod+Shift+5 move container to workspace $workspace5
+bindsym $mod+Shift+6 move container to workspace $workspace6
+bindsym $mod+Shift+7 move container to workspace $workspace7
+bindsym $mod+Shift+8 move container to workspace $workspace8
+bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
 # reload the configuration file
@@ -164,11 +171,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Lock the screen
-
-
+# Programs on specific workspaces
 
 assign [class="Firefox"] $workspace2
+assign [class="Thunar"] $workspace4
+assign [class="TeamSpeak 3"] $workspace9
 
 # colors
 
@@ -197,7 +204,7 @@ bar {
 		focused_workspace  $bg-color          $bg-color          $text-color
 		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-}
+        }
 }
 
 bindsym $mod+shift+x exec i3lock -c 2f343f #bg-color
@@ -234,4 +241,3 @@ bindsym XF86AudioPrev exec playerctl previous
 #Other options
 #workspace_auto_back_and_forth yes
 show_marks no
-
