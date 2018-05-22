@@ -4,7 +4,7 @@
 # Then symlinks known files to their correct settings dir.
 
 DOTFILE_DIR_NAME=.dotfiles
-DOTFILE_DIRECTORY=/home/$USER/$DOTFILE_DIR_NAME
+DOTFILE_DIRECTORY=$HOME/$DOTFILE_DIR_NAME
 EXISTING_DIR_NAME="old"
 EXISTING_COMPLETE=$DOTFILE_DIRECTORY/$EXISTING_DIR_NAME
 
@@ -16,6 +16,7 @@ if [ -d "$DOTFILE_DIRECTORY" ]; then
 fi
 
 cp -r $(pwd) $DOTFILE_DIRECTORY
+cd $DOTFILE_DIRECTORY
 mkdir $EXISTING_COMPLETE
 
 
@@ -31,8 +32,9 @@ function copy_and_symlink {
   ln -s $symlink_path $complete_path_to_file
 }
 
-copy_and_symlink "vscode/settings.json" "/home/$USER/.config/Code/User/settings.json"
-copy_and_symlink "bashrc" "/home/$USER/.bashrc"
-copy_and_symlink "profile" "/home/$USER/.profile"
-copy_and_symlink "fish/config.fish" "/home/$USER/.config/fish/config.fish"
-copy_and_symlink "fish/functions/fish_prompt.fish" "/home/$USER/.config/fish/functions/fish_prompt.fish"
+copy_and_symlink "vscode/settings.json" "$HOME/.config/Code/User/settings.json"
+copy_and_symlink "bashrc" "$HOME/.bashrc"
+copy_and_symlink "profile" "$HOME/.profile"
+copy_and_symlink "fish/config.fish" "$HOME/.config/fish/config.fish"
+copy_and_symlink "fish/functions/fish_prompt.fish" "$HOME/.config/fish/functions/fish_prompt.fish"
+copy_and_symlink "check_git.sh" "$HOME/.config/fish/check_git.sh"
