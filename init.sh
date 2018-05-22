@@ -33,5 +33,6 @@ function copy_and_symlink {
 
 copy_and_symlink "vscode/settings.json" "/home/$USER/.config/Code/User/settings.json"
 copy_and_symlink "bashrc" "/home/$USER/.bashrc"
+copy_and_symlink "profile" "/home/$USER/.profile"
 copy_and_symlink "fish/config.fish" "/home/$USER/.config/fish/config.fish"
 copy_and_symlink "fish/functions/fish_prompt.fish" "/home/$USER/.config/fish/functions/fish_prompt.fish"
