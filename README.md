@@ -4,7 +4,9 @@ On a new machine, do git then create symlinks for all the files.
 ```
 git clone git@github.com:walecome/dotfiles.git
 cd dotfiles/
-./init.sh
+./add_package_repos.sh
+./install.sh
+./init_dotfiles.sh
 ```
 
 This moves all clones files to ```$HOME/.dotfiles/``` and creates symlinks to some of their respective directories. If ```$HOME/.dotfiles/``` already exists the script exits.
