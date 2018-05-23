@@ -15,3 +15,4 @@ https://github.com/linuxmint/Cinnamon/wiki/Backing-up-and-restoring-your-cinnamo
 
 Useful links:\
 https://github.com/erikdubois/Ultimate-Linux-Mint-18.1-Cinnamon
+https://github.com/metalelf0/gnome-terminal-colors
