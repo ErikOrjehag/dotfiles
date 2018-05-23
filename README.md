@@ -11,3 +11,7 @@ This moves all clones files to ```$HOME/.dotfiles/``` and creates symlinks to so
 
 Cinnamon:\
 https://github.com/linuxmint/Cinnamon/wiki/Backing-up-and-restoring-your-cinnamon-settings-(dconf)
+
+
+Useful links:\
+https://github.com/erikdubois/Ultimate-Linux-Mint-18.1-Cinnamon
