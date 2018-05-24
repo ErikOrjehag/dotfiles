@@ -50,8 +50,8 @@ parse_git_branch() {
 export PYTHONPATH=${PYTHONPATH}:~/naoqi/pynaoqi-python2.7-2.5.5.5-linux64/lib/python2.7/site-packages/
 
 LS_COLORS=$LS_COLORS:'di=35:' ; export LS_COLORS
-source /opt/ros/kinetic/setup.bash
-source /home/alexander/catkin_ws/devel/setup.bash
+# source /opt/ros/kinetic/setup.bash
+# source /home/alexander/catkin_ws/devel/setup.bash
 alias fix_src='source /opt/ros/kinetic/setup.bash'
 #export PEPPER_IP=$(ip neighbor | grep "48:a9:d2:8c:6a:0c" | cut -d" " -f1)
 athome=$(ip neighbor | grep "64:6e:69:99:35:b9" | cut -d" " -f1)

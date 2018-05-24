@@ -46,12 +46,17 @@ function do_symlink {
 if [ -d "$DOTFILE_DIRECTORY" ]; then
   # Control will enter here if $DIRECTORY exists.
   echo "Directory $DOTFILE_DIRECTORY aleady exists"
-  exit 1
+    if ask "Exit?" Y; then
+    exit 1
+  fi
 fi
 
-cp -r $(pwd) $DOTFILE_DIRECTORY
+if ask "Copy dotfiles to $HOME/.dotfiles/?" Y; then
+  cp -r $(pwd) $DOTFILE_DIRECTORY
+fi
+
+
 cd $DOTFILE_DIRECTORY
-mkdir $EXISTING_COMPLETE
 
 
 if ask "Install symlink for vscode settings?" Y; then

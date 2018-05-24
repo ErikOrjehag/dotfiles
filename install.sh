@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./add_package_repos.sh
+#./add_package_repos.sh
 
 LIST_FILE_NAME="packages.txt"
 sudo apt-get update
