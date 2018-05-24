@@ -9,6 +9,40 @@ EXISTING_DIR_NAME="old"
 EXISTING_COMPLETE=$DOTFILE_DIRECTORY/$EXISTING_DIR_NAME
 
 
+set -e
+ask() {
+  while true; do
+    if [ "${2:-}" = "Y" ]; then
+      prompt="Y/n"
+      default=Y
+    elif [ "${2:-}" = "N" ]; then
+      prompt="y/N"
+      default=N
+    else
+      prompt="y/n"
+      default=
+    fi
+    read -p "$1 [$prompt] " REPLY </dev/tty
+    if [ -z "$REPLY" ]; then
+      REPLY=$default
+    fi
+    case "$REPLY" in
+      Y*|y*) return 0 ;;
+      N*|n*) return 1 ;;
+    esac
+  done
+}
+
+# Creates a symlink from arg1: local_file to arg2: complete_path_to_file. Uses ln -fs, i.e. removes existing file if present.
+function do_symlink {
+  local_file=$1
+  complete_path_to_file=$2
+  symlink_path=$(pwd)/$local_file
+  
+  echo "Creating symlink from $symlink_path to $complete_path_to_file"  
+  ln -fs $symlink_path $complete_path_to_file
+}
+
 if [ -d "$DOTFILE_DIRECTORY" ]; then
   # Control will enter here if $DIRECTORY exists.
   echo "Directory $DOTFILE_DIRECTORY aleady exists"
@@ -20,22 +54,27 @@ cd $DOTFILE_DIRECTORY
 mkdir $EXISTING_COMPLETE
 
 
-function copy_and_symlink {
-  local_file=$1
-  complete_path_to_file=$2
-  symlink_path=$(pwd)/$local_file
+if ask "Install symlink for vscode settings?" Y; then
+  do_symlink "vscode/settings.json" "$HOME/.config/Code/User/settings.json"
+fi
 
-  echo "Moving existing file $complete_path_to_file to $DOTFILE_DIRECTORY/$EXISTING_DIR_NAME/"
-  mv $complete_path_to_file $EXISTING_COMPLETE
+if ask "Install symlink for bashrc?" Y; then
+  do_symlink "bashrc" "$HOME/.bashrc"
+fi
 
-  echo "Creating symlink from $symlink_path to $complete_path_to_file"  
-  ln -s $symlink_path $complete_path_to_file
-}
+if ask "Install symlink for bash profile?" Y; then
+  do_symlink "profile" "$HOME/.profile"
+fi
 
-copy_and_symlink "vscode/settings.json" "$HOME/.config/Code/User/settings.json"
-copy_and_symlink "bashrc" "$HOME/.bashrc"
-copy_and_symlink "profile" "$HOME/.profile"
-copy_and_symlink "fish/config.fish" "$HOME/.config/fish/config.fish"
-copy_and_symlink "fish/functions/fish_prompt.fish" "$HOME/.config/fish/functions/fish_prompt.fish"
-copy_and_symlink "check_git.sh" "$HOME/.config/fish/check_git.sh"
-copy_and_symlink "tigrc" "$HOME/.tigrc"
+if ask "Install symlink for fish?" Y; then
+  do_symlink "fish/config.fish" "$HOME/.config/fish/config.fish"
+  do_symlink "fish/functions/fish_prompt.fish" "$HOME/.config/fish/functions/fish_prompt.fish"  
+fi
+
+if ask "Install symlink for git checker?" Y; then
+  do_symlink "check_git.sh" "$HOME/.config/fish/check_git.sh"
+fi
+
+if ask "Install symlink for tigrc?" Y; then
+  do_symlink "tigrc" "$HOME/.tigrc"
+fi
