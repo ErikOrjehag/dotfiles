@@ -24,7 +24,7 @@
     // "workbench.colorTheme": "Solarized Light",
     // Dark theme
     "workbench.colorTheme": "Ayu Mirage",    
-    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.revealIfOpen": true,
     "workbench.sideBar.location": "left",
 
