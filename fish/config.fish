@@ -1,5 +1,4 @@
 set fish_greeting ""
-
 alias vim="nvim"
 alias vi="nvim"
 alias lsl="ls -lthr"

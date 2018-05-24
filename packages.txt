@@ -3,3 +3,4 @@ code
 shutter
 fluxgui
 tig
+dconf-cli
