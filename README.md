@@ -4,7 +4,7 @@ On a new machine, do git then create symlinks for all the files.
 ```
 git clone git@github.com:walecome/dotfiles.git
 cd dotfiles/
-./add_package_repos.sh
+./add_external.sh
 ./install.sh
 ./init_dotfiles.sh
 ```
