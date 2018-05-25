@@ -4,3 +4,4 @@ shutter
 fluxgui
 tig
 dconf-cli
+spotify-client
