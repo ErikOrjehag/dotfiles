@@ -72,7 +72,7 @@
     },
     
     // Other
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "latex-workshop.view.pdf.viewer": "browser",
     "latex-workshop.latex.autoBuild.onSave.enabled": false,
     "window.menuBarVisibility": "toggle"
