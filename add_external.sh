@@ -13,6 +13,7 @@ sudo add-apt-repository ppa:nathan-renniewaldock/flux
 sudo apt-get install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome*.deb
+rm googe-chrome*.deb
 
 # Code
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg

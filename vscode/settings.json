@@ -69,6 +69,7 @@
         "**/*.lot": true,
         "**/*.out": true,
         "**/*.toc": true,
+        "node_modules/": true,
     },
     
     // Other

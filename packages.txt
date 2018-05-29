@@ -5,3 +5,4 @@ fluxgui
 tig
 dconf-cli
 spotify-client
+feh
