@@ -2,6 +2,7 @@ fish
 code
 shutter
 fluxgui
+redshift
 tig
 dconf-cli
 spotify-client
