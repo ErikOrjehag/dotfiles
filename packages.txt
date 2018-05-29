@@ -6,3 +6,5 @@ tig
 dconf-cli
 spotify-client
 feh
+nodejs
+yarn
