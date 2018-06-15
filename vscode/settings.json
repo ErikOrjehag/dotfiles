@@ -69,6 +69,9 @@
         "**/*.lot": true,
         "**/*.out": true,
         "**/*.toc": true,
+        "node_modules/": true,
+        ".expo/": true,
+        "**/__snapshots__": true
     },
     
     // Other
