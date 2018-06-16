@@ -73,11 +73,18 @@
         "**/*.out": true,
         "**/*.toc": true,
         "node_modules/": true,
+        "**/__snapshots__": true,
     },
     
     // Other
     "window.zoomLevel": 0,
     "latex-workshop.view.pdf.viewer": "browser",
     "latex-workshop.latex.autoBuild.onSave.enabled": true,
-    "window.menuBarVisibility": "toggle"
+    "window.menuBarVisibility": "toggle",
+    "spotify.showNextButton": false,
+    "spotify.showLyricsButton": false,
+    "spotify.showPlayButton": false,
+    "spotify.showMuteUnmuteVolumeButton": false,
+    "spotify.showPreviousButton": false,
+    "spotify.showPlayPauseButton": true
 }
