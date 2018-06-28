@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
     // Editor
-    "editor.fontSize": 20,
+    "editor.fontSize": 18,
     "editor.fontFamily": "Source Code Pro",
     "editor.tabCompletion": true,
     "editor.renderControlCharacters": true,
@@ -29,9 +29,8 @@
     "workbench.sideBar.location": "left",
 
     // Terminal
-    "terminal.external.linuxExec": "termite",
     "terminal.integrated.fontSize": 18,
-    "terminal.integrated.fontFamily": "Inconsolata",
+    "terminal.integrated.fontFamily": "Source Code Pro",
     
     // Git
     "git.autofetch": true,
