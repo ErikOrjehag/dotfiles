@@ -13,29 +13,25 @@
     "prettier.eslintIntegration": true,
     "editor.renderWhitespace": "none",
     "editor.formatOnPaste": false,
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.smoothScrolling": false,
     "[javascript]": {
         "editor.formatOnSave": true
     },
-    
     // Workbench
     // Light theme
     // "workbench.colorTheme": "Solarized Light",
     // Dark theme
-    "workbench.colorTheme": "Ayu Mirage",    
+    "workbench.colorTheme": "Ayu Mirage",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.revealIfOpen": true,
     "workbench.sideBar.location": "left",
-
     // Terminal
     "terminal.integrated.fontSize": 18,
     "terminal.integrated.fontFamily": "Source Code Pro",
-    
     // Git
     "git.autofetch": true,
     "git.confirmSync": false,
-    
     // Linting
     "python.pythonPath": "/usr/bin/python3",
     "python.linting.pylintEnabled": true,
@@ -44,7 +40,6 @@
         "--errors-only"
     ],
     "jshint.enable": false,
-    
     // Excluded files
     "files.exclude": {
         "**/.git": true,
@@ -55,7 +50,6 @@
         "**/__pycache__/": true,
         "**/.vscode": true,
         "**/__init__.py": true,
-
         // Latex workshop
         "**/*.aux": true,
         "**/*.bbl": true,
@@ -72,12 +66,15 @@
         ".expo/": true,
         "**/__snapshots__": true
     },
-    
     // Other
     "window.zoomLevel": 1,
     "latex-workshop.view.pdf.viewer": "browser",
     "latex-workshop.latex.autoBuild.onSave.enabled": false,
     "window.menuBarVisibility": "toggle",
     "extensions.ignoreRecommendations": false,
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "cquery.formatting.enabled": true,
+    "[cpp]": {
+        "editor.codeLens": false
+    }
 }
