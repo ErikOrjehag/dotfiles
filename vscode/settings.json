@@ -67,7 +67,7 @@
         "**/__snapshots__": true
     },
     // Other
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0,
     "latex-workshop.view.pdf.viewer": "browser",
     "latex-workshop.latex.autoBuild.onSave.enabled": false,
     "window.menuBarVisibility": "toggle",

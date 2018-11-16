@@ -7,8 +7,6 @@ alias g++17="g++ -std=c++17 -Wall -Wextra -pedantic -Weffc++ -Wsuggest-attribute
 alias impa="g++ -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE"
 bash $HOME/.dotfiles/check_git.sh
 
-
-
 function rar_play 
     unar *.rar
     vlc *.avi
