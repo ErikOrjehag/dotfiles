@@ -1,14 +1,17 @@
 // Place your settings in this file to overwrite the default settings
 {
     // Editor
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.fontFamily": "Source Code Pro",
-    "editor.tabCompletion": true,
+    "editor.tabCompletion": "on",
     "editor.renderControlCharacters": true,
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "editor.rulers": [
         80
     ],
+
+
+    // JS stuff
     "javascript.format.enable": false,
     "prettier.eslintIntegration": true,
     "editor.renderWhitespace": "none",
@@ -27,7 +30,7 @@
     // "workbench.colorTheme": "Solarized Light",
     // Dark theme
     "workbench.colorTheme": "Ayu Mirage",    
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
     "workbench.editor.revealIfOpen": true,
     "workbench.sideBar.location": "left",
 
@@ -47,7 +50,6 @@
     "python.linting.pylintArgs": [
         "--errors-only"
     ],
-    "jshint.enable": false,
     
     // Excluded files
     "files.exclude": {
@@ -78,13 +80,20 @@
     
     // Other
     "window.zoomLevel": 0,
+    "window.menuBarVisibility": "toggle",
+    "breadcrumbs.enabled": true,
+    "extensions.ignoreRecommendations": false,
+
+    // Latex stuff
     "latex-workshop.view.pdf.viewer": "browser",
     "latex-workshop.latex.autoBuild.onSave.enabled": true,
-    "window.menuBarVisibility": "toggle",
+
+    // Spotify plugin
     "spotify.showNextButton": false,
     "spotify.showLyricsButton": false,
     "spotify.showPlayButton": false,
     "spotify.showMuteUnmuteVolumeButton": false,
     "spotify.showPreviousButton": false,
-    "spotify.showPlayPauseButton": true
+    "spotify.showPlayPauseButton": true,
+    "search.location": "panel"
 }
