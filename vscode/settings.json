@@ -22,7 +22,7 @@
     // Light theme
     // "workbench.colorTheme": "Solarized Light",
     // Dark theme
-    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorTheme": "Gruvbox Dark Soft",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.editor.revealIfOpen": true,
     "workbench.sideBar.location": "left",
@@ -73,8 +73,9 @@
     "window.menuBarVisibility": "toggle",
     "extensions.ignoreRecommendations": false,
     "breadcrumbs.enabled": true,
-    "cquery.formatting.enabled": true,
+    "cquery.formatting.enabled": false,
     "[cpp]": {
         "editor.codeLens": false
-    }
+    },
+    "cquery.launch.notifyOnCrash": true
 }

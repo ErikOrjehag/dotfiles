@@ -7,6 +7,9 @@ alias g++17="g++ -std=c++17 -Wall -Wextra -pedantic -Weffc++ -Wsuggest-attribute
 alias impa="g++ -lm -lcrypt -O2 -std=c++11 -pipe -DONLINE_JUDGE"
 bash $HOME/.dotfiles/check_git.sh
 
+alias desktop="ssh -X alexander@192.168.1.48 -p 123"
+alias router="ssh ubnt@192.168.1.1"
+
 function rar_play 
     unar *.rar
     vlc *.avi
