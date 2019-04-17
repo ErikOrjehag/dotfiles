@@ -73,7 +73,6 @@
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google,                                                  IndentWidth: 4, ColumnLimit: 0}",
   "python.formatting.provider": "none",
   "editor.fontWeight": "400",
-  "ccls.launch.command": "/home/alexander/tmp/ccls/Release/ccls",
   "C_Cpp.autocomplete": "Disabled",
   "C_Cpp.formatting": "Disabled",
   "C_Cpp.errorSquiggles": "Disabled",
