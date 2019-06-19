@@ -1,7 +1,6 @@
+curl
 fish
-code
 shutter
 fluxgui
 tig
 dconf-cli
-spotify-client

@@ -38,7 +38,7 @@ function do_symlink {
   local_file=$1
   complete_path_to_file=$2
   symlink_path=$(pwd)/$local_file
-  
+
   echo "Creating symlink from $symlink_path to $complete_path_to_file"  
   ln -fs $symlink_path $complete_path_to_file
 }
@@ -59,10 +59,6 @@ fi
 cd $DOTFILE_DIRECTORY
 
 
-if ask "Install symlink for vscode settings?" Y; then
-  do_symlink "vscode/settings.json" "$HOME/.config/Code/User/settings.json"
-fi
-
 if ask "Install symlink for bashrc?" Y; then
   do_symlink "bashrc" "$HOME/.bashrc"
 fi
@@ -72,8 +68,9 @@ if ask "Install symlink for bash profile?" Y; then
 fi
 
 if ask "Install symlink for fish?" Y; then
+  mkdir $HOME/.config/fish/functions
   do_symlink "fish/config.fish" "$HOME/.config/fish/config.fish"
-  do_symlink "fish/functions/fish_prompt.fish" "$HOME/.config/fish/functions/fish_prompt.fish"  
+  do_symlink "fish/functions/fish_prompt.fish" "$HOME/.config/fish/functions/fish_prompt.fish"
 fi
 
 if ask "Install symlink for git checker?" Y; then

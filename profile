@@ -20,7 +20,3 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
-#export PATH=$PATH:/home/alexander/bin
-export ANDROID_HOME=/home/alexander/androidsdk/android-sdk-linux
-
